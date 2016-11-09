@@ -19,6 +19,6 @@ public class AccountController {
     @RequestMapping(value = "/queryAccounts", method = RequestMethod.GET)
     public Account queryAccounts(@RequestParam(value = "accountId")Integer accountId)
     {
-        return accountRepository.findById(new Integer(11));
+        return accountRepository.findById(accountId);
     }
 }
